@@ -39,13 +39,21 @@ h1, h2, h3, h4 {
 }
 
 .green-box {
-	padding: 25px;
+	padding: 15px;
 	border-radius: 0 0 15px 0;
 	width: 200px;
 	background-color: #57AD57;
-	color: #fbfcfc;
 	line-height: 0;
 	text-align: center;
+	p {
+		color: #fff;
+		font-size: 1.4rem;
+		margin: 0;
+	}
+	h4 {
+		font-weight: 700;
+		color: #fff;
+	}
 }
 .green-box h5{
 	line-height: 0;
