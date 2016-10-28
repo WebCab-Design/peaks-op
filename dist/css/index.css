@@ -1,19 +1,136 @@
-p {
-    font-family: "jaf-bernina-sans-condensed",sans-serif;
-    font-weight: 300;
-    color: #cacaca;
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: sans-serif;
+    transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
 }
 
-h1, h2, h3, h4 {
-    font-family: "jaf-bernina-sans-condensed",sans-serif;
-    color: #000000;
+html {
+    overflow-x: hidden;
 }
 
-.jumbo {
-    position: relative;
+section {
+    padding: 4%;
+}
+
+section {
+    text-align: center;
+}
+
+footer {
+    color: #aaa;
+    padding: 4%;
+    background: #000;
+}
+
+a {
+    color: currentColor;
+}
+
+h1, h2, h3, p {
+    margin: 0.5rem auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/*
+	global
+*/
+.light {
+    color: #fff;
+}
+
+.button {
+    margin: auto;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 3px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
+}
+
+.green-bg {
+    color: #fff;
+    background: #57AD57;
+}
+
+.paralax {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/*
+	layout
+*/
+.contact-bar {
+    color: #aaa;
+    padding: 8px;
+}
+
+.contact-bar a {
+    text-decoration: none;
+}
+
+.call-now {
+    color: #fff;
+    padding: 16px;
+    display: block;
+    background: #57AD57;
+    border-radius: 3px;
+    position: absolute;
+    text-align: center;
+}
+
+.call-now a {
+    text-decoration: none;
+}
+
+.call-now div:nth-child(2) {
+    font-weight: bold;
+}
+
+.main-image {
     width: 100%;
-    height: 100%;
-    max-height: 550px;
+}
+
+.main-image img {
+    width: 100%;
+}
+
+/*
+	home
+*/
+.boxes {
+    color: #aaa;
+    padding: 16px 0;
+}
+
+.boxes div {
+    padding: 16px;
+    background: #000;
 }
 
 .menu-bar {
@@ -92,31 +209,6 @@ h1, h2, h3, h4 {
     font-size: 3.5rem;
 }
 
-.boxes {
-    width: 100%;
-}
-
-.box1 {
-    padding: 15px;
-    color: #fbfcfc;
-    background-color: #000000;
-    text-align: center;
-}
-
-.box2 {
-    padding: 15px;
-    color: #fbfcfc;
-    background-color: #1a1a1a;
-    text-align: center;
-}
-
-.box3 {
-    padding: 15px;
-    color: #fbfcfc;
-    background-color: #1a1a1a;
-    text-align: center;
-}
-
 .learn-more.evidence {
     background: url("http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:486da9,c_fill,e_tint,fl_any_format.lossy,g_center,h_800,o_56,w_1900/v1476392895/peaks/peaks-op/AdobeStock_58707837.jpg") fixed;
     padding: 28px;
@@ -139,14 +231,6 @@ h1, h2, h3, h4 {
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: #ECF0F1;
-}
-
-footer {
-    color: #fbfcfc;
-    padding-top: 25px;
-    height: 75px;
-    width: 100%;
-    background-color: #cacaca;
 }
 
 .fa-comments {
