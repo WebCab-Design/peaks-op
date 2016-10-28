@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/WebCab-Design/peaks-op#readme",
   "dependencies": {
+    "astatine": "^1.0.7",
     "flexboxgrid": "^6.3.1"
   }
 }
