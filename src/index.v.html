@@ -1,54 +1,58 @@
 <style>
 	.paralax-0 {
+		color: #fff;
 		text-align: center;
 		background-image: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:486da9,c_fill,e_tint,fl_any_format.lossy,g_center,h_800,o_56,w_1900/v1476392895/peaks/peaks-op/AdobeStock_58707837.jpg');
+		/*background-image: radial-gradient(rgba(0,0,0,0.6) 30%, rgba(0,0,0,0) 90%), url('http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:486da9,c_fill,e_tint,fl_any_format.lossy,g_center,h_800,o_56,w_1900/v1476392895/peaks/peaks-op/AdobeStock_58707837.jpg');*/*/
 	}
 </style>
 
 <section>
-	<h3 id="rincon-blue">Rincon Recovery</h3>
-	<p>Offering gender-specific, evidence based, long-term treatment for drug and alcohol addiction</p>
+	<h2>Rincon Recovery</h2>
+	<p class="center">Offering gender-specific, evidence based, long-term treatment for drug and alcohol addiction</p>
 </section>
 
 <section class="boxes row around-xs">
-	<div class="col-xs-3">
+	<div class="col-xs-10 col-md-3">
 		<h3>Our Program</h3>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere tempor lorem, id vestibulum enim sollicitudin non. Donec eget iaculis nisl. Pellentesque eu ultrices arcu. Fusce mollis nibh non nisi scelerisque, sed aliquam ex rutrum.</p>
 	</div>
-	<div class="col-xs-3">
+	<div class="col-xs-10 col-md-3">
 		<h3>Evidence Based</h3>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere tempor lorem, id vestibulum enim sollicitudin non. Donec eget iaculis nisl. Pellentesque eu ultrices arcu. Fusce mollis nibh non nisi scelerisque, sed aliquam ex rutrum.</p>
 	</div>
-	<div class="col-xs-3">
+	<div class="col-xs-10 col-md-3">
 		<h3>Complete Recovery</h3>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere tempor lorem, id vestibulum enim sollicitudin non. Donec eget iaculis nisl. Pellentesque eu ultrices arcu. Fusce mollis nibh non nisi scelerisque, sed aliquam ex rutrum.</p>
 	</div>
 </section>
 
-<section class="paralax paralax-0 light">
+<section class="paralax paralax-0">
 	<h2>Our Colorado Location</h2>
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod ligula sed felis vehicula, a laoreet ex ullamcorper. Maecenas mattis est id ipsum ultricies suscipit. In lacinia nunc nisl, non pellentesque lacus tristique vitae. In hac habitasse platea dictumst. Praesent ac fermentum risus. Cras sit amet arcu eleifend, maximus diam in, vehicula nulla.</p>
-	<a class="button green-bg" href="tel:5555555555">Call Now</a>
+	<a class="button outline-purple" href="tel:5555555555">Call Now</a>
 </section>
 
 <section>
 	<h2>Holistic Addiction Treatment</h2>
 	<p>Sed scelerisque erat ut turpis egestas venenatis. Vivamus pretium diam mi, ut sollicitudin metus facilisis quis. Vestibulum sagittis molestie malesuada. Nunc bibendum est tincidunt lacus ultricies scelerisque. Fusce quam turpis, lobortis aliquet lorem sed, consectetur venenatis lectus. Proin arcu libero, tincidunt vel finibus nec, aliquet dictum ante. Aliquam et libero sit amet dolor bibendum maximus. Sed facilisis orci at viverra venenatis. Aliquam porta at odio a eleifend. Nulla iaculis et erat a venenatis. Nullam aliquet volutpat elit at venenatis.</p>
-	<a class="button green-bg" href="tel:5555555555">Call Now</a>
 </section>
 
-<section>
-	<div>
-		<h3>Let's get in touch</h3>
-		<p>Fill out the form below to get in touch with our program director.</p>
-		<hr>
-	</div>
+<section class="blue-bg">
+	<h2>Let's get in touch</h2>
+	<p class="center">Fill out the form below to get in touch with our program director.</p>
 	<form>
-		<input type="text" name="contact_first_name" placeholder="first name" required/>
-		<input type="text" name="contact_last_name" placeholder="last name" required/>
-		<input type="text" name="contact_phone" placeholder="your number" />
-		<input type="text" name="contact_email" placeholder="email" required/>
-		<textarea name="contact_message" placeholder="your message" required></textarea>
-		<button class="button blue" type="submit">Submit</button>
+		<div class="row center-xs">
+			<input class="col-xs-4" type="text" name="First_Name" placeholder="First Name" required/>
+			<input class="col-xs-4" type="text" name="Last_Name" placeholder="Last Name" required/>
+		</div>
+		<div class="row center-xs">
+			<input class="col-xs-4" type="tel" name="Phone_Number" placeholder="Phone Number"/>
+			<input class="col-xs-4" type="email" name="Email_Address" placeholder="Email Address" required/>
+		</div>
+		<div class="row center-xs">
+			<textarea class="col-xs-8" name="Message" placeholder="Message"></textarea>
+		</div>
+		<input class="button outline-blue" type="submit" value="Submit">
     </form>
 </section>
