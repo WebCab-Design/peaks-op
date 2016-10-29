@@ -4,8 +4,10 @@
 	<meta charset="utf-8">
 	<title>Peaks Community Out-Patient Center</title>
 
-	<link rel="stylesheet" href="/css/flexboxgrid.min.css">
-	<link rel="stylesheet" href="/css/index.css">
+	<link rel="stylesheet" href="/assets/css/flexboxgrid.min.css">
+	<link rel="stylesheet" href="/assets/css/index.css">
+	<script src="/assets/js/astatine.min.js" defer></script>
+	<script src="/assets/js/index.js" defer></script>
 </head>
 <body>
 
@@ -69,7 +71,10 @@
 <section class="blue-bg">
 	<h2>Let's get in touch</h2>
 	<p class="center">Fill out the form below to get in touch with our program director.</p>
-	<form>
+
+	<div class="contact-response"></div>
+
+	<form class="contact-form" action="https://formspree.io/aelias@webcabdesign.com" enctype="application/json" method="post">
 		<div class="row center-xs">
 			<input class="col-xs-4" type="text" name="First_Name" placeholder="First Name" required/>
 			<input class="col-xs-4" type="text" name="Last_Name" placeholder="Last Name" required/>
@@ -81,8 +86,10 @@
 		<div class="row center-xs">
 			<textarea class="col-xs-8" name="Message" placeholder="Message"></textarea>
 		</div>
+		<input type="hidden" name="_format" value="plain" />
 		<input class="button outline-blue" type="submit" value="Submit">
     </form>
+
 </section>
 
 	</main>

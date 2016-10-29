@@ -1,7 +1,7 @@
 $white: #fff;
 $black: #222;
 $gray: #aaa;
-// $green: #57AD57;
+$green: #57AD57;
 $blue: #aab4d0;
 $purple: #634165;
 
@@ -80,13 +80,13 @@ button, input[type="submit"], input[type="button"] {
 }
 .button {
 	margin: auto;
+	cursor: pointer;
 	padding: 16px 32px;
 	border-radius: 3px;
 	text-align: center;
 	display: inline-block;
 	text-decoration: none;
 	text-transform: uppercase;
-	// box-shadow: 0 3px 3px rgba(0,0,0,0.3);
 }
 .button:hover {
 	box-shadow: 0 3px 3px rgba(0,0,0,0.3);
@@ -185,6 +185,11 @@ button, input[type="submit"], input[type="button"] {
 /*
 	form
 */
+.contact-response {
+	color: $green;
+	margin: 8px auto;
+	font-size: 1.5rem;
+}
 form input, form textarea {
 	margin: 0.5rem;
 	padding: 0.5rem;
