@@ -35,13 +35,18 @@ a {
 }
 
 hr {
-    width: 100%;
-    margin: auto;
-    border: solid 1px #a39894;
+    height: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #cacaca;
+    border-left: 0;
+    margin: 1.25rem auto;
+    clear: both;
 }
 
 h1, h2, h3, p {
-    margin: 1rem auto;
+    margin-bottom: 1rem;
+    line-height: 1.6rem;
 }
 
 h1 {
@@ -59,9 +64,8 @@ h3 {
     color: #6b9e78;
 }
 
-button, input[type="submit"], input[type="button"] {
-    border: none;
-    background: none;
+ul {
+    line-height: 1.6rem;
 }
 
 .logo {
@@ -94,10 +98,12 @@ button, input[type="submit"], input[type="button"] {
 }
 
 .button {
+    width: auto;
     margin: auto;
     cursor: pointer;
     padding: 16px 32px;
     border-radius: 3px;
+    border: none;
     text-align: center;
     display: inline-block;
     text-decoration: none;
@@ -108,21 +114,27 @@ button, input[type="submit"], input[type="button"] {
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
 }
 
-.outline-purple {
-    color: #fff;
-    border: solid 1px #fff !important;
+.button:hover:focus {
+    border: none;
 }
 
-.outline-purple:hover {
+.outline-green {
     background: #fff;
+    color: #6b9e78;
+    border: solid 1px #6b9e78 !important;
 }
 
-.outline-blue {
+.outline-green:hover {
+    color: #fff;
+    background: #6b9e78;
+}
+
+.outline-white {
     color: #fff;
     border: solid 1px #fff !important;
 }
 
-.outline-blue:hover {
+.outline-white:hover {
     color: #a39894;
     background: #fff;
 }
@@ -137,6 +149,20 @@ button, input[type="submit"], input[type="button"] {
 /*
 	layout
 */
+.side-menu {
+    list-style: none !important;
+    margin-bottom: 1rem;
+}
+
+.block {
+    max-width: 62.5rem;
+    margin: 1rem auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0.93rem;
+    padding-left: 0.93rem;
+}
+
 .contact-bar {
     color: #a39894;
     padding: 8px;
@@ -275,15 +301,19 @@ nav {
 }
 
 form input, form textarea {
-    margin: 0.5rem;
     padding: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0.5rem 0.5rem;
+    font-size: 0.9rem;
 }
 
-.contact-form textarea {
-    max-width: 670px;
+.contact-form textarea, .insurance-form textarea {
+    max-width: 720px;
 }
 
-.contact-form input, .contact-form textarea, .contact-form input:focus, .contact-form textarea:focus {
+.main-contact input, .main-contact textarea, .main-contact textarea:focus, .main-contact input:focus,
+.contact-form input, .contact-form textarea, .contact-form textarea:focus, .contact-form input:focus, .insurance-form textarea, .insurance-form textarea:focus, .insurance-form input, .insurance-form input:focus {
     border-radius: 0;
     box-shadow: none;
     border: none;
@@ -302,7 +332,23 @@ form input, form textarea {
 
 form textarea, form input[type="submit"] {
     display: block;
-    margin: 0.5rem auto;
+}
+
+fieldset {
+    padding: 1rem;
+    border: 1px solid #cacaca;
+    border-radius: 4px;
+    margin: 1rem auto;
+}
+
+legend {
+    padding: 0.3rem;
+}
+
+label {
+    display: block;
+    margin: 0;
+    color: #000;
 }
 
 @media screen and (max-width: 940px) {
