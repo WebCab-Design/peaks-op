@@ -16,14 +16,11 @@ html {
 
 section {
     padding: 4%;
-}
-
-section {
     text-align: center;
 }
 
 footer {
-    padding: 4%;
+    padding: 2%;
     color: #fff;
     background: #222;
 }
@@ -34,13 +31,13 @@ p {
 }
 
 a {
-    color: currentColor;
+    color: #6b9e78;
 }
 
 hr {
     width: 100%;
     margin: auto;
-    border: solid 1px #aaa;
+    border: solid 1px #a39894;
 }
 
 h1, h2, h3, p {
@@ -49,19 +46,31 @@ h1, h2, h3, p {
 
 h1 {
     font-size: 2.5rem;
+    color: #6b9e78;
 }
 
 h2 {
     font-size: 2rem;
+    color: #6b9e78;
 }
 
 h3 {
     font-size: 1.5rem;
+    color: #6b9e78;
 }
 
 button, input[type="submit"], input[type="button"] {
     border: none;
     background: none;
+}
+
+.logo {
+    position: absolute;
+    max-height: 100px;
+    top: 2rem;
+    left: 2rem;
+    height: 100px;
+    width: 100px;
 }
 
 /*
@@ -71,18 +80,22 @@ button, input[type="submit"], input[type="button"] {
     text-align: center;
 }
 
-.blue-bg {
+.grey-bg {
     color: #fff;
-    background: #aab4d0;
+    background: #a39894;
+}
+
+.grey-bg h2 {
+    color: #fff;
 }
 
 .green-bg {
     color: #fff;
-    background: #634165;
 }
 
 .button {
     margin: auto;
+    cursor: pointer;
     padding: 16px 32px;
     border-radius: 3px;
     text-align: center;
@@ -101,7 +114,6 @@ button, input[type="submit"], input[type="button"] {
 }
 
 .outline-purple:hover {
-    color: #634165;
     background: #fff;
 }
 
@@ -111,7 +123,7 @@ button, input[type="submit"], input[type="button"] {
 }
 
 .outline-blue:hover {
-    color: #aab4d0;
+    color: #a39894;
     background: #fff;
 }
 
@@ -126,9 +138,9 @@ button, input[type="submit"], input[type="button"] {
 	layout
 */
 .contact-bar {
-    color: #aaa;
+    color: #a39894;
     padding: 8px;
-    border-bottom: solid 1px #aaa;
+    background: #f8f8f8;
 }
 
 .contact-bar a {
@@ -142,7 +154,6 @@ button, input[type="submit"], input[type="button"] {
     margin: 0 16px;
     position: absolute;
     text-align: center;
-    background: #634165;
     text-decoration: none;
     border-radius: 0px 0px 8px 8px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
@@ -160,6 +171,43 @@ button, input[type="submit"], input[type="button"] {
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
 }
 
+/*Menu Bar*/
+nav {
+    box-sizing: initial;
+}
+
+.nav-bar {
+    z-index: 1;
+    color: #6d387a;
+    padding-top: 25px;
+    height: 6rem;
+}
+
+.nav-tool {
+    background: #fff;
+}
+
+.nav-list-main {
+    text-align: right !important;
+}
+
+.nav-list-sub {
+    z-index: 1;
+    background: #fff;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.nav-bar li > a {
+    color: #6b9e78;
+    padding: 1rem 2rem !important;
+    text-decoration: none;
+}
+
+.nav-list-sub > li:nth-child(2) {
+    font-weight: bold;
+}
+
+/*Nav ENd*/
 .main-image {
     width: 100%;
     color: #fff;
@@ -190,13 +238,27 @@ button, input[type="submit"], input[type="button"] {
 .boxes {
     color: #fff;
     padding: 16px 0;
+    margin: 16px;
 }
 
-.boxes div {
-    margin: 8px;
+.boxes > div {
     padding: 16px;
     border-radius: 3px;
-    background: #222;
+    background: #6b9e78;
+    display: inline-block;
+    width: 30%;
+}
+
+.boxes > div h3 {
+    color: #fff;
+}
+
+.boxes > div:nth-child(2) {
+    background: #8ab294;
+}
+
+.boxes > div:nth-child(3) {
+    background: #a9c6b0;
 }
 
 .boxes p {
@@ -206,12 +268,47 @@ button, input[type="submit"], input[type="button"] {
 /*
 	form
 */
+.contact-response {
+    color: #6b9e78;
+    margin: 8px auto;
+    font-size: 1.5rem;
+}
+
 form input, form textarea {
     margin: 0.5rem;
     padding: 0.5rem;
 }
 
+.contact-form textarea {
+    max-width: 670px;
+}
+
+.contact-form input, .contact-form textarea, .contact-form input:focus, .contact-form textarea:focus {
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid #cacaca;
+    background: none;
+}
+
+.contact-form textarea::-webkit-input-placeholder, .contact-form input::-webkit-input-placeholder, .contact-form input:focus::-webkit-input-placeholder, .contact-form textarea:focus::-webkit-input-placeholder {
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-bottom: 2px solid #8a8a8a;
+}
+
 form textarea, form input[type="submit"] {
     display: block;
     margin: 0.5rem auto;
+}
+
+@media screen and (max-width: 940px) {
+    .boxes div {
+        display: block;
+        width: 100%;
+        margin: 4px;
+    }
 }
