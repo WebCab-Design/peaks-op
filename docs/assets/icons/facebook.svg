@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+
+<style type="text/css">
+	.icon {
+		font-size: 50px;
+		fill: #3B5999;
+		font-family: 'FontAwesome';
+	}
+	.rec {
+		width: 75px;
+		height: 75px;
+		cursor: pointer;
+		fill: rgba(250,250,250,0.5);
+	}
+	.rec:hover {
+		fill: #000;
+		color: #fff;
+	}
+</style>
+
+<rect class="rec"></rect>
+<text transform="matrix(1 0 0 1 0 50)" class="icon"></text>
+
+</svg>
