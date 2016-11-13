@@ -19,12 +19,6 @@ section {
     text-align: center;
 }
 
-footer {
-    padding: 2%;
-    color: #fff;
-    background: #222;
-}
-
 a {
     color: #6b9e78;
 }
@@ -59,7 +53,12 @@ h3 {
 }
 
 ul {
-    line-height: 1.6rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+ul > ul {
+    margin-left: 1rem;
 }
 
 .block {
@@ -132,13 +131,25 @@ ul {
     box-shadow: none;
 }
 
-.outline-green {
+.solid-green {
     background: #fff;
     color: #6b9e78;
     border: solid 1px #6b9e78 !important;
 }
 
+.solid-green:hover {
+    color: #fff;
+    background: #6b9e78;
+}
+
+.outline-green {
+    text-shadow: 0px 2px 2px #000;
+    color: #fff;
+    border: solid 2px #6b9e78 !important;
+}
+
 .outline-green:hover {
+    text-shadow: none;
     color: #fff;
     background: #6b9e78;
 }
@@ -263,9 +274,12 @@ nav {
 }
 
 .main-titles {
-    height: 150px;
+    background: rgba(107, 158, 120, 0.5);
     text-align: center;
-    padding: 4rem;
+    margin: 1rem auto;
+    border-radius: 0.2rem;
+    padding: 2rem;
+    width: 60%;
 }
 
 .social {
@@ -371,11 +385,42 @@ label {
     color: #000;
 }
 
+/* Foot */
+.copyright {
+    padding: 1rem;
+    background: #222;
+}
+
+.upper-foot {
+    background: #3C2826;
+    text-align: center;
+    padding: 1rem;
+}
+
+.upper-foot > div {
+    display: inline-block;
+    vertical-align: top;
+    margin: 1rem;
+    width: 25%;
+}
+
+footer {
+    color: #fff;
+}
+
 /*Icons*/
 @media screen and (max-width: 940px) {
     .boxes div {
         display: block;
         width: 100%;
         margin: 4px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .upper-foot > div {
+        width: 100%;
+        margin: auto;
+        display: block;
     }
 }
