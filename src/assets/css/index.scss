@@ -28,11 +28,7 @@ section {
 	padding: 4%;
 	text-align: center;
 }
-footer {
-	padding: 2%;
-	color: $white;
-	background: $black;
-}
+
 p {
 
 }
@@ -65,7 +61,11 @@ h3 {
 	color: $green;
 }
 ul {
-	line-height: 1.6rem;
+	margin-bottom: 1rem;
+	margin-left: 1rem;
+}
+ul > ul {
+	margin-left: 1rem;
 }
 .block {
 	max-width: 960px;
@@ -136,12 +136,22 @@ ul {
 	}
 
 }
-.outline-green {
+.solid-green {
 	background: $white;
 	color: $green;
 	border: solid 1px $green !important;
 }
+.solid-green:hover {
+	color: $white;
+	background: $green;
+}
+.outline-green {
+	text-shadow: 0px 2px 2px #000;
+	color: $white;
+	border: solid 2px $green !important;
+}
 .outline-green:hover {
+	text-shadow: none;
 	color: $white;
 	background: $green;
 }
@@ -263,9 +273,13 @@ nav {
 
 }
 .main-titles {
-	height: 150px;
+	background: rgba(107,158,120,0.5);
 	text-align: center;
-	padding: 4rem;
+	margin: 1rem auto;
+	border-radius: 0.2rem;
+	padding: 2rem;
+	width: 60%;
+
 }
 .social {
 	margin-top: 44px;
@@ -362,6 +376,27 @@ label {
 	margin: 0;
 	color: #000;
 }
+
+/* Foot */
+.copyright {
+	padding: 1rem;
+	background: $black;
+}
+.upper-foot {
+	background: $brown;
+	text-align: center;
+	padding: 1rem;
+}
+.upper-foot > div {
+	display: inline-block;
+	vertical-align: top;
+	margin: 1rem;
+	width: 25%;
+}
+
+footer {
+	color: $white;
+}
 /*Icons*/
 
 
@@ -375,6 +410,11 @@ label {
 }
 
 @media screen and (max-width: 768px) {
+	.upper-foot > div {
+		width: 100%;
+		margin: auto;
+		display: block;
+	}
 }
 
 @media screen and (max-width: 375px) {
