@@ -1,3 +1,147 @@
-<!-- { "title": "Verify Insurance | Admissions | Peaks Recovery Services" } -->
+<!-- { "title": "Verify Insurance | Peaks Recovery Services" } -->
 
-<h3>Coming Soon</h3>
+<div class="block">
+<div class="row around-xs">
+	<div class="col-xs">
+		<h1>Verify Insurance</h1>
+		<h3>Fill out form below to submit insurance information</h3>
+		<hr>
+	</div>
+</div>
+</div>
+
+<div class="block">
+<div class="row">
+	<div class="col-xs-12 col-sm-3">
+		<!-- { "partial": "assets/partials/side-menu.p.html" } -->
+	</div>
+	<div class="col-xs-12 col-sm-9">
+		<p>Peaks Recover Servics are out-of-network providers and work with most insurance PPO plans. Please submit your insurance information below and a representative from our company will contact you within 24-hours regarding your insurance benefits. If you are interested in cash payment options, please contact our admission line directly at (888) 596-9818.</p>
+		<p>For United Health Care/ Optum policies, the client must call the insurer first and get a reference ID number. Please note that the policy holder cannot do this for the potential client, the actual client seeking treatment needs to call insurer to get the reference number. Please place reference number in the comments section.</p>
+		<p> We are not a Medicaid or Medicare provider. Please <a href="/medicaid-providers/">Click Here</a> for a list of Medicaid providers in the state of Colorado.</p>
+
+		<form class="insurance-form" method="POST" enctype="application/json" action="https://formspree.io/xdoqekem">
+			<input type="hidden" name="_cc" value="bburns@peaksrecovery.com" />
+
+			<h3>Contact Info</h3>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<input name="Patient First Name" type="text" placeholder="Client First Name" required>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<input name="Patient Last Name" type="text" placeholder="Client Last Name" required>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<label for="Patient Birth">DOB</label>
+					<input name="Patient Birth" type="date" required>
+				</div>
+			</div>
+			<strong>Who should we contact after verification of benefits?</strong>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<input name="Contact First Name" type="text" placeholder="First Name" required>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<input name="Contact First Name" type="text" placeholder="First Name" required>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<input name="Patient Address" type="text" placeholder="Street">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-4">
+					<input name="Patient City" type="text" placeholder="City">
+				</div>
+				<div class="col-xs-12 col-sm-4">
+					<input name="Patient State" type="text" placeholder="State">
+				</div>
+				<div class="col-xs-12 col-sm-4">
+					<input name="Patient Zip" type="number" min="0" max="99999" placeholder="Zip">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<input name="Patient Phone" type="tel" placeholder="Phone">
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<input name="Patient Email" type="email" placeholder="Email" required>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<input name="Referral Type" type="text" placeholder="How Did You Hear About Us?" value="">
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<input name="Patient Issue" type="text" placeholder="What’s Going On?" value="">
+				</div>
+			</div>
+
+			<strong>Insurance Info</strong>
+
+			<!-- Primary -->
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<input name="Primary First Name" type="text" placeholder="Primary First Name" required>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<input name="Primary Last Name" type="text" placeholder="Primary Last Name" required>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<input name="Primary Birth" type="date" placeholder="Date of Birth" required>
+				</div>
+			</div>
+			<!-- Primary -->
+
+			<!-- Secondary -->
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<input name="Secondary First Name" type="text" placeholder="Secondary First Name" required>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<input name="Secondary Last Name" type="text" placeholder="Secondary Last Name" required>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<input name="Secondary Birth" type="date" placeholder="Date of Birth" required>
+				</div>
+			</div>
+			<!-- Secondary -->
+
+			<div class="row">
+				<div class="col-xs-12">
+					<input name="Primary Provider" type="text" placeholder="Insurance Provider" required>
+				</div>
+				<div class="col-xs-12">
+					<input name="Primary Insurance Group" type="text" placeholder="Insurance Group" required>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<input name="Primary Group Id" type="text" placeholder="Insurance Group ID" required>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<input name="Primary Phone" type="tel" placeholder="Insurance Phone Number" required>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<textarea name="Primary Comments" type="text" placeholder="Comments"></textarea>
+				</div>
+			</div>
+
+		    <input class="button outline-green" type="submit" value="Submit">
+		</form>
+
+		<div class="insurance-response"></div>
+	</div>
+</div>
+</div>
