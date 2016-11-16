@@ -21,6 +21,11 @@ section {
 
 a {
     color: #6b9e78;
+    font-family: "brandon-grotesque",sans-serif;
+}
+
+p {
+    font-size: 1rem;
 }
 
 hr {
@@ -56,6 +61,7 @@ h3 {
 ul {
     margin-bottom: 1rem;
     margin-left: 1rem;
+    font-family: "brandon-grotesque",sans-serif;
 }
 
 form {
