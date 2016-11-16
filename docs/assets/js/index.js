@@ -1,11 +1,10 @@
-
 (function() {
 	'use strict';
 
 	At.submit({
 		query: '.contact-form',
 		prepare: function (data) {
-			delete data._format;
+			data._cc = 'bburns@peaksrecovery.com';
 		},
 		complete: function (error, success) {
 			var response = document.querySelector('.contact-response');

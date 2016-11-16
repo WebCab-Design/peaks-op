@@ -34,22 +34,22 @@ hr {
 }
 
 h1, h2, h3, p {
-    margin-bottom: 1rem;
+    margin: 1rem auto;
 }
 
 h1 {
-    font-size: 2.5rem;
     color: #6b9e78;
+    font-size: 3rem;
 }
 
 h2 {
-    font-size: 2rem;
     color: #6b9e78;
+    font-size: 2rem;
 }
 
 h3 {
-    font-size: 1.5rem;
     color: #6b9e78;
+    font-size: 1.5rem;
 }
 
 ul {
@@ -57,8 +57,33 @@ ul {
     margin-left: 1rem;
 }
 
-ul > ul {
-    margin-left: 1rem;
+form {
+    margin: 2rem auto;
+}
+
+input, textarea {
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+textarea, input[type="text"], input[type="number"], input[type="email"], input[type="tel"] {
+    border: none;
+    outline: none;
+    max-width: 100%;
+    background: none;
+    border-bottom: solid 1px #cacaca;
+}
+
+textarea:focus, textarea:active,
+input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="tel"]:focus,
+input[type="text"]:active, input[type="number"]:active, input[type="email"]:active, input[type="tel"]:active {
+    border: solid 1px #cacaca;
+}
+
+button, input[type="submit"], input[type="button"] {
+    margin: auto;
+    display: block;
+    background: none;
 }
 
 .block {
@@ -66,24 +91,27 @@ ul > ul {
     margin: 0.5rem auto !important;
 }
 
-.logo {
-    position: absolute;
-    max-height: 100px;
-    top: 2rem;
-    left: 2rem;
-    height: 100px;
-}
-
 /*
 	global
 */
+.paralax {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.paralax .content {
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
+}
+
 .center {
     text-align: center;
 }
 
 .grey-bg {
     color: #fff;
-    background: #a39894;
+    background: #968a86;
 }
 
 .grey-bg h2 {
@@ -95,12 +123,12 @@ ul > ul {
 }
 
 .button {
-    width: auto;
     margin: auto;
+    border: none;
     cursor: pointer;
     padding: 16px 32px;
     border-radius: 3px;
-    border: none;
+    text-shadow: none;
     text-align: center;
     display: inline-block;
     text-decoration: none;
@@ -108,67 +136,43 @@ ul > ul {
 }
 
 .button:hover {
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
-}
-
-.button:hover:focus {
-    border: none;
-}
-
-.read-more {
-    color: #fff;
-    padding: 8px;
-    text-align: left;
-    font-weight: 100 !important;
-    border-left: 1px solid #fff;
-    border-radius: 0;
-}
-
-.read-more:hover {
-    border-left: none;
-    border-bottom: 1px solid #fff;
-    background: none;
-    box-shadow: none;
-}
-
-.solid-green {
-    background: #fff;
-    color: #6b9e78;
-    border: solid 1px #6b9e78 !important;
-}
-
-.solid-green:hover {
-    color: #fff;
-    background: #6b9e78;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 .outline-green {
-    text-shadow: 0px 2px 2px #000;
-    color: #fff;
-    border: solid 2px #6b9e78 !important;
+    color: #6b9e78;
+    border: solid 1px #6b9e78;
 }
 
 .outline-green:hover {
-    text-shadow: none;
     color: #fff;
     background: #6b9e78;
 }
 
 .outline-white {
     color: #fff;
-    border: solid 1px #fff !important;
+    border: solid 1px #fff;
 }
 
 .outline-white:hover {
-    color: #a39894;
+    color: #968a86;
     background: #fff;
 }
 
-.paralax {
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+.read-more {
+    color: #fff;
+    padding: 8px;
+    text-align: left;
+    font-weight: 100;
+    border-radius: 0;
+    border-left: 1px solid #fff;
+}
+
+.read-more:hover {
+    background: none;
+    box-shadow: none;
+    border-left: none;
+    border-bottom: 1px solid #fff;
 }
 
 /*
@@ -180,14 +184,18 @@ ul > ul {
 }
 
 .contact-bar {
-    color: #a39894;
+    color: #968a86;
     padding: 8px;
 }
 
 .contact-bar a {
-    text-decoration: none;
+    padding: 0.8rem;
     font-size: 0.8rem;
-    font-weight: 100;
+    text-decoration: none;
+}
+
+.contact-bar a:hover {
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .call-now {
@@ -214,35 +222,32 @@ ul > ul {
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
 }
 
-/*Menu Bar*/
-nav {
-    box-sizing: initial;
+/*
+	header
+*/
+.logo {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .nav-bar {
-    z-index: 1;
-    color: #6d387a;
-    padding-top: 25px;
-    height: 6rem;
-}
-
-.nav-tool {
-    background: #fff;
+    color: #6b9e78;
+    vertical-align: middle;
 }
 
 .nav-list-main {
-    text-align: right !important;
+    background: #fff;
+    text-align: right;
 }
 
 .nav-list-sub {
-    z-index: 1;
     background: #fff;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 .nav-bar li > a {
     color: #6b9e78;
-    padding: 1rem 2rem !important;
+    padding: 1rem 2rem;
     text-decoration: none;
 }
 
@@ -250,22 +255,22 @@ nav {
     font-weight: bold;
 }
 
-/*Nav ENd*/
 .main-image {
     width: 100%;
     color: #fff;
     height: 400px;
-    position: relative;
     overflow: hidden;
+    position: relative;
+    background: rgba(107, 158, 120, 0.5);
 }
 
 .main-image img {
     top: 0;
     left: 0;
     z-index: -1;
-    position: absolute;
     height: 400px;
     min-width: 100%;
+    position: absolute;
 }
 
 .main-image h1, .main-image h3 {
@@ -274,12 +279,11 @@ nav {
 }
 
 .main-titles {
-    background: rgba(107, 158, 120, 0.5);
-    text-align: center;
-    margin: 1rem auto;
-    border-radius: 0.2rem;
-    padding: 2rem;
     width: 60%;
+    padding: 2rem;
+    margin: 1rem auto;
+    text-align: center;
+    border-radius: 0.2rem;
 }
 
 .social {
@@ -302,11 +306,12 @@ nav {
 }
 
 .boxes > div {
+    width: 30%;
+    margin: 8px;
     padding: 16px;
     border-radius: 3px;
     background: #6b9e78;
     display: inline-block;
-    width: 30%;
 }
 
 .boxes > div h3 {
@@ -325,8 +330,14 @@ nav {
     text-align: left;
 }
 
+.insurance-response {
+    color: #6b9e78;
+    margin: 8px auto;
+    font-size: 1.5rem;
+}
+
 /*
-	form
+	contact
 */
 .contact-response {
     color: #6b9e78;
@@ -334,58 +345,9 @@ nav {
     font-size: 1.5rem;
 }
 
-form input, form textarea {
-    padding: 0.5rem;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0.5rem 0.5rem;
-    font-size: 0.9rem;
-}
-
-.contact-form textarea, .insurance-form textarea {
-    max-width: 720px;
-}
-
-.main-contact input, .main-contact textarea, .main-contact textarea:focus, .main-contact input:focus,
-.contact-form input, .contact-form textarea, .contact-form textarea:focus, .contact-form input:focus, .insurance-form textarea, .insurance-form textarea:focus, .insurance-form input, .insurance-form input:focus {
-    border-radius: 0;
-    box-shadow: none;
-    border: none;
-    border-bottom: 1px solid #cacaca;
-    background: none;
-}
-
-.contact-form textarea::-webkit-input-placeholder, .contact-form input::-webkit-input-placeholder, .contact-form input:focus::-webkit-input-placeholder, .contact-form textarea:focus::-webkit-input-placeholder {
-    color: #fff;
-    font-size: 0.9rem;
-}
-
-.contact-form input:focus, .contact-form textarea:focus {
-    border-bottom: 2px solid #8a8a8a;
-}
-
-form textarea, form input[type="submit"] {
-    display: block;
-}
-
-fieldset {
-    padding: 1rem;
-    border: 1px solid #cacaca;
-    border-radius: 4px;
-    margin: 1rem auto;
-}
-
-legend {
-    padding: 0.3rem;
-}
-
-label {
-    display: block;
-    margin: 0;
-    color: #000;
-}
-
-/* Foot */
+/*
+	foot
+*/
 .copyright {
     padding: 1rem;
     background: #222;
@@ -408,7 +370,9 @@ footer {
     color: #fff;
 }
 
-/*Icons*/
+/*
+	media
+*/
 @media screen and (max-width: 940px) {
     .boxes div {
         display: block;
@@ -424,3 +388,7 @@ footer {
         display: block;
     }
 }
+
+/*
+	does not work
+*/
