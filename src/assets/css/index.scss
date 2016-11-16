@@ -32,7 +32,7 @@ a {
 	color: $green;
 	font-family: "brandon-grotesque",sans-serif;
 }
-p{
+p {
 	margin: 1rem auto;
 	font-size: 1.1rem;
 	font-family: "raleway",sans-serif;
@@ -352,6 +352,9 @@ footer {
 		display: block;
 		width: 100%;
 		margin: 4px;
+	}
+	.menu-bar {
+		padding: 2rem 0;
 	}
 }
 @media screen and (max-width: 768px) {
