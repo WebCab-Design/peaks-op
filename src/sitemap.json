@@ -1,0 +1,26 @@
+{
+	"/": "index.v.html",
+	"program-overview": {
+		"peaks-services": "index.v.html",
+		"young-adults": "index.v.html",
+		"impaired-professionals": "index.v.html",
+		"family-services": "index.v.html",
+		"staff": "index.v.html",
+		"admissions": {
+			"admissions-process": "index.v.html",
+			"verify-insurance": "index.v.html",
+			"financial-form": "index.v.html"
+		},
+		"verify-insurance": "index.v.html"
+	},
+	"addiction-treatment": {
+		"alcohol-addiction": "index.v.html",
+		"heroin-opioid-addiction": "index.v.html",
+		"meth-addiction": "index.v.html",
+		"cocaine-addiction": "index.v.html",
+		"process-addiction": "index.v.html"
+	},
+	"mental-health": "index.v.html",
+	"blog": "index.v.html",
+	"contact-us": "index.v.html"
+}

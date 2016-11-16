@@ -1,0 +1,25 @@
+
+	<?xml version="1.0" encoding="UTF-8"?>
+	<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+		xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+		xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+	<url><loc>/index.v.html</loc></url>
+	<url><loc>/program-overview/peaks-services/index.v.html</loc></url>
+	<url><loc>/program-overview/young-adults/index.v.html</loc></url>
+	<url><loc>/program-overview/impaired-professionals/index.v.html</loc></url>
+	<url><loc>/program-overview/family-services/index.v.html</loc></url>
+	<url><loc>/program-overview/staff/index.v.html</loc></url>
+	<url><loc>/program-overview/admissions/admissions-process/index.v.html</loc></url>
+	<url><loc>/program-overview/admissions/verify-insurance/index.v.html</loc></url>
+	<url><loc>/program-overview/admissions/financial-form/index.v.html</loc></url>
+	<url><loc>/program-overview/verify-insurance/index.v.html</loc></url>
+	<url><loc>/addiction-treatment/alcohol-addiction/index.v.html</loc></url>
+	<url><loc>/addiction-treatment/heroin-opioid-addiction/index.v.html</loc></url>
+	<url><loc>/addiction-treatment/meth-addiction/index.v.html</loc></url>
+	<url><loc>/addiction-treatment/cocaine-addiction/index.v.html</loc></url>
+	<url><loc>/addiction-treatment/process-addiction/index.v.html</loc></url>
+	<url><loc>/mental-health/index.v.html</loc></url>
+	<url><loc>/blog/index.v.html</loc></url>
+	<url><loc>/contact-us/index.v.html</loc></url>
+	</urlset>
+	
