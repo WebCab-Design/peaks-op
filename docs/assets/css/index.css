@@ -185,13 +185,8 @@ button, input[type="submit"], input[type="button"] {
 }
 
 /*
-	layout
+	header
 */
-.side-menu {
-    list-style: none !important;
-    margin-bottom: 1rem;
-}
-
 .contact-bar {
     color: #968a86;
     padding: 8px;
@@ -206,33 +201,10 @@ button, input[type="submit"], input[type="button"] {
     background: rgba(0, 0, 0, 0.1);
 }
 
-.call-now {
-    color: #fff;
-    padding: 16px;
-    display: block;
-    margin: 0 16px;
-    position: absolute;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 0px 0px 8px 8px;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+.menu-bar {
+    padding: 2rem;
 }
 
-.call-now div {
-    font-size: 1.5rem;
-}
-
-.call-now div:nth-child(2) {
-    font-weight: bold;
-}
-
-.call-now:hover {
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
-}
-
-/*
-	header
-*/
 .logo {
     display: inline-block;
     vertical-align: middle;
@@ -307,6 +279,14 @@ button, input[type="submit"], input[type="button"] {
 .social > a > object {
     width: 50px;
     height: 50px;
+}
+
+/*
+	layout
+*/
+.side-menu {
+    list-style: none !important;
+    margin-bottom: 1rem;
 }
 
 /*
