@@ -1,7 +1,7 @@
 $white: #fff;
 $black: #222;
 $brown: #3C2826;
-$grey: #a39894;
+$grey: #968a86;
 $green: #6b9e78;
 
 * {
@@ -28,10 +28,6 @@ section {
 	padding: 4%;
 	text-align: center;
 }
-
-p {
-
-}
 a {
 	color: $green;
 }
@@ -45,51 +41,64 @@ hr {
 	clear: both;
 }
 h1, h2, h3, p {
-	margin-bottom: 1rem;
-
+	margin: 1rem auto;
 }
 h1 {
-	font-size: 2.5rem;
 	color: $green;
+	font-size: 3rem;
 }
 h2 {
-	font-size: 2rem;
 	color: $green;
+	font-size: 2rem;
 }
 h3 {
-	font-size: 1.5rem;
 	color: $green;
+	font-size: 1.5rem;
 }
 ul {
 	margin-bottom: 1rem;
 	margin-left: 1rem;
 }
-ul > ul {
-	margin-left: 1rem;
+form {
+	margin: 2rem auto;
+}
+input, textarea {
+	margin: 1rem;
+	padding: 0.5rem;
+}
+textarea, input[type="text"], input[type="number"], input[type="email"], input[type="tel"] {
+	border: none;
+	outline: none;
+	max-width: 100%;
+	background: none;
+	border-bottom: solid 1px #cacaca;
+}
+textarea:focus, textarea:active,
+input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="tel"]:focus,
+input[type="text"]:active, input[type="number"]:active, input[type="email"]:active, input[type="tel"]:active,{
+	border: solid 1px #cacaca;
+}
+button, input[type="submit"], input[type="button"] {
+	margin: auto;
+	display: block;
+	background: none;
 }
 .block {
 	max-width: 960px;
 	margin: 0.5rem auto !important;
 }
-// button, input[type="submit"], input[type="button"] {
-// 	border: none;
-// 	background: none;
-// }
-// .row {
-// 	margin: 1rem auto;
-// 	max-width: 75rem;
-// }
-.logo {
-	position: absolute;
-	max-height: 100px;
-	top: 2rem;
-	left: 2rem;
-	height: 100px;
-
-}
 /*
 	global
 */
+.paralax {
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+.paralax .content {
+	text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
+}
 .center {
 	text-align: center;
 }
@@ -104,70 +113,49 @@ ul > ul {
 	color: $white ;
 }
 .button {
-	width: auto;
 	margin: auto;
+	border: none;
 	cursor: pointer;
 	padding: 16px 32px;
 	border-radius: 3px;
-	border: none;
+	text-shadow: none;
 	text-align: center;
 	display: inline-block;
 	text-decoration: none;
 	text-transform: uppercase;
 }
-.button:hover{
-	box-shadow: 0 3px 3px rgba(0,0,0,0.3);
-	&:focus {
-		border: none;
-	}
-}
-.read-more {
-	color: #fff;
-	padding: 8px;
-	text-align: left;
-	font-weight: 100 !important;
-	border-left: 1px solid #fff;
-	border-radius: 0;
-	&:hover {
-		border-left: none;
-		border-bottom: 1px solid #fff;
-		background: none;
-		box-shadow: none;
-	}
-
-}
-.solid-green {
-	background: $white;
-	color: $green;
-	border: solid 1px $green !important;
-}
-.solid-green:hover {
-	color: $white;
-	background: $green;
+.button:hover {
+	box-shadow: 0 3px 3px rgba(0,0,0,0.1);
 }
 .outline-green {
-	text-shadow: 0px 2px 2px #000;
-	color: $white;
-	border: solid 2px $green !important;
+	color: $green;
+	border: solid 1px $green;
 }
 .outline-green:hover {
-	text-shadow: none;
 	color: $white;
 	background: $green;
 }
 .outline-white {
 	color: $white;
-	border: solid 1px $white !important;
+	border: solid 1px $white;
 }
 .outline-white:hover {
 	color: $grey;
     background: $white;
 }
-.paralax {
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
+.read-more {
+	color: #fff;
+	padding: 8px;
+	text-align: left;
+	font-weight: 100;
+	border-radius: 0;
+	border-left: 1px solid #fff;
+}
+.read-more:hover {
+	background: none;
+	box-shadow: none;
+	border-left: none;
+	border-bottom: 1px solid #fff;
 }
 /*
 	layout
@@ -189,16 +177,14 @@ ul > ul {
 .contact-bar {
 	color: $grey;
     padding: 8px;
-	// background: $grey; /* For browsers that do not support gradients */
-	// background: -webkit-linear-gradient(left top, rgba(107, 158, 120, 0.2), rgba(254, 248, 154, 0.2); /* For Safari 5.1 to 6.0 */
-	// background: -o-linear-gradient(bottom right, rgba(107, 158, 120, 0.2), rgba(254, 248, 154, 0.2); /* For Opera 11.1 to 12.0 */
-	// background: -moz-linear-gradient(bottom right, rgba(107, 158, 120, 0.2), rgba(254, 248, 154, 0.2); /* For Firefox 3.6 to 15 */
-	// background: linear-gradient(to bottom right, rgba(107, 158, 120, 0.2), rgba(254, 248, 154, 0.2); /* Standard syntax */
 }
 .contact-bar a {
-	text-decoration: none;
+	padding: 0.8rem;
 	font-size: 0.8rem;
-	font-weight: 100;
+	text-decoration: none;
+}
+.contact-bar a:hover {
+	background: rgba(0,0,0,0.1);
 }
 .call-now {
 	color: $white;
@@ -220,79 +206,68 @@ ul > ul {
 .call-now:hover {
 	box-shadow: 0 3px 3px rgba(0,0,0,0.6);
 }
-/*Menu Bar*/
-nav {
-	box-sizing: initial;
+/*
+	header
+*/
+.logo {
+	display: inline-block;
+	vertical-align: middle;
 }
 .nav-bar {
-	z-index: 1;
-	color: #6d387a;
-	padding-top: 25px;
-	height: 6rem;
-}
-.nav-tool {
-	background: #fff;
+	color: $green;
+	vertical-align: middle;
 }
 .nav-list-main {
-	text-align: right !important;
+	background: #fff;
+	text-align: right;
 }
 .nav-list-sub {
-	z-index: 1;
 	background: #fff;
 	box-shadow: 0px 3px 3px rgba(0,0,0,0.3);
 }
 .nav-bar li > a {
 	color: $green;
-	padding: 1rem 2rem !important;
+	padding: 1rem 2rem;
 	text-decoration: none;
 }
 .nav-list-sub > li:nth-child(2) {
 	font-weight: bold;
 }
-/*Nav ENd*/
-
 .main-image {
 	width: 100%;
 	color: $white;
 	height: 400px;
-	position: relative;
 	overflow: hidden;
+	position: relative;
+	background: rgba(107, 158, 120, 0.5);
 }
 .main-image img {
 	top: 0;
 	left: 0;
 	z-index: -1;
-	position: absolute;
 	height: 400px;
 	min-width: 100%;
-
+	position: absolute;
 }
 .main-image h1, .main-image h3 {
 	color: #f8f8f8;
 	text-shadow: 0 3px 6px rgba(0,0,0,0.6);
-
 }
 .main-titles {
-	background: rgba(107,158,120,0.5);
-	text-align: center;
-	margin: 1rem auto;
-	border-radius: 0.2rem;
-	padding: 2rem;
 	width: 60%;
-
+	padding: 2rem;
+	margin: 1rem auto;
+	text-align: center;
+	border-radius: 0.2rem;
+	// background: rgba(107,158,120,0.5);
 }
 .social {
 	margin-top: 44px;
-	// margin-left: auto;
-	// margin-right: auto;
-	// width: 319px;
 	text-align: center;
 }
 .social > div {
 	display: inline-block;
-
 }
-
 /*
 	home
 */
@@ -303,13 +278,14 @@ nav {
 	text-align: left;
 }
 .boxes > div {
+	width: 30%;
+	margin: 8px;
 	padding: 16px;
 	border-radius: 3px;
 	background: $green;
 	display: inline-block;
-	width: 30%;
 }
-.boxes > div h3{
+.boxes > div h3 {
 	color: #fff;
 }
 .boxes > div:nth-child(2) {
@@ -321,63 +297,22 @@ nav {
 .boxes p {
     text-align: left;
 }
-/*
-	form
-*/
-form {
-
+.insurance-response {
+	color: $green;
+	margin: 8px auto;
+	font-size: 1.5rem;
 }
+/*
+	contact
+*/
 .contact-response {
 	color: $green;
 	margin: 8px auto;
 	font-size: 1.5rem;
 }
-form input, form textarea {
-	padding: 0.5rem;
-	width: 100%;
-	box-sizing: border-box;
-	margin: 0.5rem 0.5rem;
-	font-size: 0.9rem;
-}
-.contact-form textarea, .insurance-form textarea {
-	max-width: 720px;
-}
-.main-contact input, .main-contact textarea, .main-contact textarea:focus, .main-contact input:focus,
-.contact-form input, .contact-form textarea, .contact-form textarea:focus, .contact-form input:focus, .insurance-form textarea, .insurance-form textarea:focus, .insurance-form input, .insurance-form input:focus,  {
-	border-radius: 0;
-	box-shadow: none;
-	border: none;
-	border-bottom: 1px solid #cacaca;
-	background: none;
-}
-.contact-form textarea::-webkit-input-placeholder,.contact-form input::-webkit-input-placeholder, .contact-form input:focus::-webkit-input-placeholder, .contact-form textarea:focus::-webkit-input-placeholder {
-   color: #fff;
-   font-size: 0.9rem;
-}
-.contact-form input:focus, .contact-form textarea:focus {
-	border-bottom: 2px solid #8a8a8a;
-}
-form textarea, form input[type="submit"] {
-	display: block;
-	// margin: 0.5rem auto;
-}
-
-fieldset {
-	padding: 1rem;
-	border: 1px solid #cacaca;
-	border-radius: 4px;
-	margin: 1rem auto;
-}
-legend {
-	padding: 0.3rem;
-}
-label {
-	display: block;
-	margin: 0;
-	color: #000;
-}
-
-/* Foot */
+/*
+	foot
+*/
 .copyright {
 	padding: 1rem;
 	background: $black;
@@ -393,22 +328,19 @@ label {
 	margin: 1rem;
 	width: 25%;
 }
-
 footer {
 	color: $white;
 }
-/*Icons*/
-
-
+/*
+	media
+*/
 @media screen and (max-width: 940px) {
 	.boxes div {
 		display: block;
 		width: 100%;
 		margin: 4px;
 	}
-
 }
-
 @media screen and (max-width: 768px) {
 	.upper-foot > div {
 		width: 100%;
@@ -417,6 +349,22 @@ footer {
 	}
 }
 
-@media screen and (max-width: 375px) {
-
-}
+/*
+	does not work
+*/
+// .insurance-form textarea::-webkit-input-placeholder,
+// .insurance-form input::-webkit-input-placeholder,
+// .insurance-form textarea::-ms-input-placeholder,
+// .insurance-form input::-ms-input-placeholder,
+// .insurance-form textarea::-moz-placeholder,
+// .insurance-form input::-moz-placeholder {
+//    color: white;
+// }
+// .contact-form textarea::-webkit-input-placeholder,
+// .contact-form input::-webkit-input-placeholder,
+// .contact-form textarea::-ms-input-placeholder,
+// .contact-form input::-ms-input-placeholder,
+// .contact-form textarea::-moz-placeholder,
+// .contact-form input::-moz-placeholder {
+//    color: gray;
+// }
