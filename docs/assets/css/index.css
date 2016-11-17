@@ -226,12 +226,8 @@ button, input[type="submit"], input[type="button"] {
 
 .nav-bar li > a {
     color: #6b9e78;
-    padding: 1rem 2rem;
+    padding: 1rem 1.2rem;
     text-decoration: none;
-}
-
-.nav-list-sub > li:nth-child(2) {
-    font-weight: bold;
 }
 
 .main-image {
@@ -240,7 +236,19 @@ button, input[type="submit"], input[type="button"] {
     height: 400px;
     overflow: hidden;
     position: relative;
-    background: rgba(107, 158, 120, 0.5);
+}
+
+.main-image-m {
+    color: #fff;
+    position: relative;
+}
+
+.main-image-m img {
+    max-width: 100%;
+    height: auto;
+    -ms-interpolation-mode: bicubic;
+    display: inline-block;
+    vertical-align: center;
 }
 
 .main-image img {
@@ -267,6 +275,24 @@ button, input[type="submit"], input[type="button"] {
 
 .main-titles h3 {
     margin-bottom: 2rem;
+}
+
+.social-m {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.social-m > a {
+    margin: 8px;
+    display: inline-block;
+}
+
+.social-m > a > object {
+    width: 50px;
+    height: 50px;
 }
 
 .social {
