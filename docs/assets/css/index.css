@@ -41,7 +41,6 @@ hr {
 }
 
 h1, h2, h3 {
-    margin: 1rem auto;
     font-family: "brandon-grotesque",sans-serif;
 }
 
@@ -261,9 +260,13 @@ button, input[type="submit"], input[type="button"] {
 .main-titles {
     width: 60%;
     padding: 2rem;
-    margin: 1rem auto;
+    margin: 2rem auto;
     text-align: center;
     border-radius: 0.2rem;
+}
+
+.main-titles h3 {
+    margin-bottom: 2rem;
 }
 
 .social {
@@ -285,8 +288,28 @@ button, input[type="submit"], input[type="button"] {
 	layout
 */
 .side-menu {
-    list-style: none !important;
     margin-bottom: 1rem;
+}
+
+.side-menu ul {
+    list-style: none !important;
+}
+
+.side-menu li {
+    margin: 0.25rem auto;
+}
+
+.side-menu ul li a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+.side-menu ul li a:hover {
+    color: #fff;
+    background: #6b9e78;
 }
 
 /*
