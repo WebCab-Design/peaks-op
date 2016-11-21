@@ -39,4 +39,14 @@
 		}
 	});
 
+	// var bioButton = document.querySelector('.bio');
+	// var bioContent = document.querySelector('.bio-more');
+	// var closeButton = document.querySelector('.close');
+	// 
+	// bioButton.addEventListener('click', function(){
+	// 	bioContent.classList.toggle('active');
+	// });
+	// closeButton.addEventListener('click', function(){
+	// 	closeButton.classList.toggle('active')
+	// });
 });

@@ -65,7 +65,10 @@ h3 {
 ul {
 	margin-bottom: 1rem;
 	margin-left: 1rem;
-	font-family: "brandon-grotesque",sans-serif;
+	li {
+		font-family: "raleway",sans-serif;
+		margin: 1rem auto;
+	}
 }
 form {
 	margin: 2rem auto;
@@ -311,6 +314,7 @@ button, input[type="submit"], input[type="button"] {
 	margin-bottom: 1rem;
 	ul {
 		list-style: none !important;
+		margin-left: 0 !important;
 	}
 	li {
 		margin: 0.25rem auto;
@@ -370,6 +374,24 @@ button, input[type="submit"], input[type="button"] {
 	color: $green;
 	margin: 8px auto;
 	font-size: 1.5rem;
+}
+.contact-widget {
+	background: #6b9e78;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-align: center;
+	border-radius: 0 0 16px 0;
+	p {
+		color: #fff;
+		margin: 4px auto;
+		font-weight: 100;
+	}
+	h3 {
+		color: #fff;
+	}
+	a {
+		text-decoration: none;
+	}
 }
 /*
 	foot
