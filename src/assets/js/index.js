@@ -4,7 +4,7 @@
 	At.submit({
 		query: '.contact-form',
 		prepare: function (data) {
-			data._cc = 'bburns@peaksrecovery.com,cburns@peaksrecovery.com';
+			data._cc = 'bburns@peaksrecovery.com';
 		},
 		complete: function (error, success) {
 			var response = document.querySelector('.contact-response');
@@ -23,7 +23,7 @@
 	At.submit({
 		query: '.insurance-form',
 		prepare: function (data) {
-			data._cc = 'bburns@peaksrecovery.com,cburns@peaksrecovery.com';
+			data._cc = 'bburns@peaksrecovery.com';
 		},
 		complete: function (error, success) {
 			var response = document.querySelector('.insurance-response');
