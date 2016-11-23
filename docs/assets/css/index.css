@@ -3,7 +3,6 @@
     padding: 0;
     font-family: sans-serif;
     transition: all 300ms ease;
-    -o-transition: all 300ms ease;
     -ms-transition: all 300ms ease;
     -moz-transition: all 300ms ease;
     -webkit-transition: all 300ms ease;
@@ -132,6 +131,14 @@ button, input[type="submit"], input[type="button"] {
 
 .green-bg {
     color: #fff;
+}
+
+.response {
+    color: #6b9e78;
+    margin: 8px auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
 }
 
 .button {
@@ -378,21 +385,9 @@ button, input[type="submit"], input[type="button"] {
     text-align: left;
 }
 
-.insurance-response {
-    color: #6b9e78;
-    margin: 8px auto;
-    font-size: 1.5rem;
-}
-
 /*
 	contact
 */
-.contact-response {
-    color: #6b9e78;
-    margin: 8px auto;
-    font-size: 1.5rem;
-}
-
 .contact-widget {
     background: #6b9e78;
     padding-top: 8px;
@@ -461,7 +456,3 @@ footer {
         display: block;
     }
 }
-
-/*
-	does not work
-*/
