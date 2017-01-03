@@ -219,6 +219,16 @@ button, input[type="submit"], input[type="button"] {
 /*
 	header
 */
+header {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+header img {
+    width: 100%;
+}
+
 .connect {
     margin-bottom: 16px;
 }
