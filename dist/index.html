@@ -33,6 +33,7 @@
 	<link rel="stylesheet" href="/assets/css/index.css">
 
 	<!-- Script -->
+	<script src="/assets/js/slider.js"></script>
 	<script src="/assets/js/nav-bar.js"></script>
 	<script src="/assets/js/astatine.js"></script>
 	<script src="/assets/js/index.js"></script>
@@ -51,11 +52,11 @@
 </head>
 <body>
 	<header>
-		<!-- <div class="connect row">
-			<div class="col-xs start-xs">
+		<div class="connect row">
+			<div class="col-xs-7 start-xs">
 				<a href="tel:18885069818">Free Consultation: (888) 506-9818</a>
 			</div>
-			<div class="col-xs end-xs">
+			<div class="col-xs-5 end-xs">
 				<a href="https://twitter.com/peaksrecovery" target="_blank">
 					<img src="/assets/icons/t.png" alt="Twitter Logo" />
 				</a>
@@ -66,7 +67,7 @@
 					<img src="/assets/icons/g.png" alt="Google+ Logo" />
 				</a>
 			</div>
-		</div> -->
+		</div>
 		<div class="logo">
 			<a href="/">
 				<img src="http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,fl_any_format.lossy,w_275/v1478225543/peaks/staff/Peaks-Recovery-Services-Colorado_fhlx2y.png" alt="Peaks Services Logo" />
@@ -104,33 +105,10 @@
 					</ul>
 				</li>
 				<li><a href="/mental-health">Mental Health</a></li>
-				<li><a href="/blog/">Blog</a></li>
+				<!-- <li><a href="/blog/">Blog</a></li> -->
 				<li><a href="/contact/">Contact</a></li>
 			</ul>
 		</nav>
-		<!-- <div class="main-image">
-				<a class="call-now" href="tel:5555555555">
-				<div>Call Now</div>
-				<div>(555) 555 5555</div>
-			</a>
-			<div class="main-titles">
-				<h1>Peaks Recovery Services</h1>
-				<h3>Caring for the Colorado Springs Community</h3>
-				<a class="button outline-white" href="tel:8885069818">Call Now</a>
-			</div>
-			<div class="social">
-				<a href="#">
-					<object data="/assets/icons/facebook.svg" type="image/svg+xml">Facebook</object>
-				</a>
-				<a href="#">
-					<object data="/assets/icons/twitter.svg" type="image/svg+xml">Twitter</object>
-				</a>
-				<a href="#">
-					<object data="/assets/icons/google.svg" type="image/svg+xml">Google</object>
-				</a>
-			</div>
-			<img src="http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,fl_any_format.lossy,h_600,w_1900/v1478236701/peaks/peaks-op/shutterstock_170148734_rdtlch.jpg" alt="Colorado mountain range" />
-		</div> -->
 	</header>
 
 	<main>
@@ -143,17 +121,36 @@
 		background-image: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:486da9,c_fill,e_tint,fl_any_format.lossy,g_center,h_800,o_56,w_1900/v1476392895/peaks/peaks-op/AdobeStock_58707837.jpg');
 	}
 </style>
-<div class="main-image">
-	<!-- <a class="call-now" href="tel:5555555555">
-		<div>Call Now</div>
-		<div>(555) 555 5555</div>
-	</a> -->
-	<div class="main-titles">
-		<h1>Peaks Recovery Services</h1>
-		<h3>Caring for the Colorado Springs Community</h3>
-		<a class="button outline-white" href="tel:8885069818">Call Now</a>
+<div class="slider" data-index="0" data-interval="10000">
+	<div class="main-title">
+		<img src="http://res.cloudinary.com/dbc2wlvk8/image/upload/fl_any_format.lossy,h_800,w_2000/v1481486653/peaks/peaks-centers/Winter-Peaks-Recovery-Centers-Home-Page.jpg" alt="Colorado Mountain Range" />
+		<div class="title-wrap">
+			<div>
+				<div class="transparent-primary">
+					<h1>A Caring Recovery Network</h1>
+					<h2>Peaks Recovery Centers are nationally accredited, gender specific, addiction treatment programs in Colorado, specifically designed for young adults 18-30.</h2>
+				</div>
+			</div>
+			<div>
+				<iframe width="100%" height="100%" min-height="200px" src="https://www.youtube.com/embed/chb4VH14t1Q?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
 	</div>
-	<img src="http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,fl_any_format.lossy,h_600,w_1900/v1478236701/peaks/peaks-op/shutterstock_170148734_rdtlch.jpg" alt="Colorado mountain range" />
+	<div class="main-title">
+		<div class="title-wrap">
+			<div class="transparent-secondary">
+				<h1>Gender Specific</h1>
+				<h2>Peaks Recovery Centers are among a very short list of extended care, gender specific treatment facilities within the state of Colorado. In fact, we are the only gender-separate treatment facility in the state of Colorado offering a full six-months of clinical services.</h2>
+			</div>
+			<div>
+				<iframe width="100%" height="100%" min-height="200px" src="https://www.youtube.com/embed/EoI2PDvCeTI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		<img src="http://res.cloudinary.com/dbc2wlvk8/image/upload/fl_any_format.lossy,h_800,w_2000/v1481486653/peaks/peaks-centers/Winter-Peaks-Recovery-Centers-Home-Page.jpg" alt="Colorado Mountain Range" />
+	</div>
+</div>
+<div class="verify">
+	<a href="/recovery-program/admissions/verify-insurance/">Verify Insurance</a>
 </div>
 <section class="boxes row around-xs content">
 	<div class="col-xs-12 col-sm">
@@ -174,149 +171,112 @@
 </section>
 
 <section class="paralax paralax-0">
-	<div class="content">
-		<h2>Contact Us</h2>
-		<p class="center content">
-			If you would like to learn more about our program, please click Contact Now and a representative from Peaks will contact you within 24 hours.
-		</p>
-		<a class="button outline-white" href="/contact">Contact Now</a>
-		<!-- <h2>Our Colorado Location</h2> -->
-		<!-- <p>Offering gender-specific, evidence based, long-term treatment for drug and alcohol addiction</p>
-		<a class="button outline-white" href="tel:8885069818">Call Now</a> -->
-	</div>
-</section>
-
-<section>
-	<div class="row">
-	<div class="col-xs-12 content">
-		<h2>Verify Insurance</h2>
-		<p><strong>Peaks Recovery Services</strong> are out-of-network providers and work with most insurance PPO plans. Please submit your insurance information below and a representative from our company will contact you within 24-hours regarding your insurance benefits. If you are interested in cash payment options please contact our admissions line directly at <a href="tel:18885069818">1-888-506-9818</a>.</p>
-	</div>
-</div>
-
-<div class="row">
-	<div class="col-xs-12">
-		<a href="https://crm.bestnotes.com/portal/rosehouse" target="new">
-			<a href="/program-overview/admissions/verify-insurance/">
-				<button class="button outline-green">Verify Here</button>
-			</a>
-		</a>
-	</div>
-</div>
-
-<hr style="width: 50%;">
-
-<div class="row">
-	<div class="col-xs-12">
-		<div class="insurance-logos">
-			<img src="http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_150/v1471459339/rose-house/478fe156cb99f3838e900bfb396567ca.jpg">
-			<img src="http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_150/v1471459340/rose-house/cigna-logo-wallpaper.jpg">
-			<img src="http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_150/v1471459340/rose-house/Harvard-Pilgrim-Health-Insurance.jpg">
-			<img src="http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_150/v1471459340/rose-house/health-net-logo.jpg">
-			<img src="http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_150/v1471459340/rose-house/logo_ahpa.png">
-			<img src="http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,w_125/v1471459340/rose-house/humana-logo-blog-large.jpg">
-			<img src="http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,fl_any_format.lossy,w_120/v1477953541/rose-house/download.png">
-		</div>
-	</div>
-</div>
-
-</section>
-
-<!-- <section class="grey-bg">
 	<h2>Contact Us</h2>
-	<p class="center content">
-		If you would like to learn more about our program, please fill out the form and a representative from Peaks will contact you within 24 hours.
+	<p>
+		If you would like to learn more about our program, please click Contact Now and a representative from Peaks will contact you within 24 hours.
+		<a class="button primary" href="/contact">Contact Now</a>
 	</p>
-
-	<div class="contact-response"></div>
-
-	<form class="contact-form" method="POST" enctype="application/json" action="https://formspree.io/xdoqekem">
-		<div class="row center-xs">
-			<input class="col-xs-4" type="text" name="First_Name" placeholder="First Name" required/>
-			<input class="col-xs-4" type="text" name="Last_Name" placeholder="Last Name" required/>
+</section>
+<section class="contact-section">
+	<h3>Contact Peaks Recovery and get confidential help!</h3>
+	<hr>
+	<form class="form">
+		<input type="hidden" name="*cc" value="cburns@peaksrecovery.com" />
+		<div class="row">
+			<div class="col-xs-12 col-sm-6">
+				<input type="text" name="First Name" placeholder="First Name">
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<input type="text" name="Last Name" placeholder="Last Name">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-6">
+				<input type="number" name="Phone" placeholder="Phone">
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<input type="text" name="Email" placeholder="Email">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-6">
+				<input type="text" name="Insurance" placeholder="Insurance">
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<input type="text" name="Seeking Care For" placeholder="Seeking care for?">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<textarea type="text" name="Message" placeholder="What can we help you with?"></textarea>
+			</div>
 		</div>
 		<div class="row center-xs">
-			<input class="col-xs-4" type="tel" name="Phone_Number" placeholder="Phone Number"/>
-			<input class="col-xs-4" type="email" name="Email_Address" placeholder="Email Address" required/>
+			<div class="col-xs-12">
+				<input type="hidden" name="Form Name" value="Peaks Recovery - Contact">
+				<input type="hidden" name="*formname" value="Peaks Recovery - Contact">
+				<input class="button primary" type="submit" value="Get Help">
+			</div>
+			<div class="col-xs-12">
+				<img src="http://res.cloudinary.com/dbc2wlvk8/image/upload/fl_any_format.lossy/v1480971111/peaks/JCNQA_1.png" alt="">
+				<img src="http://res.cloudinary.com/dbc2wlvk8/image/upload/fl_any_format.lossy/v1480971111/peaks/NAATP-Peaks.png" alt="">
+			</div>
 		</div>
-		<div class="row center-xs">
-			<textarea class="col-xs-10" name="Message" placeholder="Message"></textarea>
+		<div class="row">
+			<strong>By submitting this form, I agree to be contacted by Peak Recovery Centers.</strong>
+			<p>One of our admissions coordinators will contact you shortly to discuss your recovery options. All information shared with us is completely confidential.</p>
 		</div>
-		<input type="hidden" name="_cc" value="bburns@peaksrecovery.com" />
-		<input type="hidden" name="_format" value="plain" />
-		<input class="button outline-white" type="submit" value="Submit">
-    </form>
-</section> -->
+	</form>
+	<div class="response"></div>
+</section>
 
 	</main>
 	<footer>
-			<div class="upper-foot row center-xs">
-				<div class="col-xs-10 center-xs col-sm-5 end-sm">
-					<h3>A Caring Recovery</h3>
-				</div>
-				<div class="col-xs-10 center-xs col-sm-5 start-sm">
-					<a class="button solid-green" href="tel:18885069818">Call Now</a>
-				</div>
+		<div class="row center-xs">
+			<div class="col-xs-10 col-sm-5 center-xs end-sm">
+				<h3>A Caring Recovery</h3>
 			</div>
+			<div class="col-xs-10 col-sm-5 center-xs start-sm">
+				<a class="button primary" href="tel:18885069818">Call Now</a>
+			</div>
+		</div>
+		<div>
 			<div class="lower-foot">
 				<div class="row center-xs">
-					<div class="col-sm-3">
-						<img src="http://res.cloudinary.com/dbc2wlvk8/image/upload/fl_any_format.lossy/v1480971111/peaks/JCNQA_1.png" alt="">
+					<div class="col-xs-3 col-sm-2 end-xs">
+						<img src="https://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,fl_any_format.lossy,h_75/v1483653283/peaks/peaks-centers/Serenity-Peaks-Recovery-Colorado-Springs-Logo.png" alt="Serenity Peaks Recovery Colorado Springs">
 					</div>
-					<div class="col-sm-3">
-						<img src="http://res.cloudinary.com/dbc2wlvk8/image/upload/fl_any_format.lossy/v1480971111/peaks/logo.png" alt="">
+					<div class="col-xs-3 col-sm-2">
+						<a href="http://triplepeaksrecovery.com/" target="_blank">
+							<img src="https://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,fl_any_format.lossy,h_75/v1483653284/peaks/peaks-centers/Triple-Peaks-Recovery-Colorado-Springs-Logo.png" alt="Triple Peaks Recovery Colorado Springs">
+						</a>
 					</div>
-					<div class="col-sm-3">
-						<img src="http://res.cloudinary.com/dbc2wlvk8/image/upload/fl_any_format.lossy/v1480971111/peaks/NAATP-Peaks.png" alt="">
-					</div>
-				</div>
-				<div class="row around-xs middle-sm">
-					<div class="col-xs-10 col-sm-7">
-						<p>Everyday millions of individuals and their families are affected by substance use disorder. Studies show that the longer young adults participate in treatment programs and stay active in their recovery, the more likely it is that they will achieve long-term sobriety and stability. We believe it paramount to the long-term success for both young adults and professionals that they continue with extended care treatment. Our client’s personal growth and recovery from alcohol and substance abuse is our highest priority. It’s why we do what we do. At Peaks Recovery Services we value how special your loved one is and we are committed to their long-term recovery and personal growth.</p>
-					</div>
-					<div class="col-xs-10 col-sm-3">
-						<a class="button outline-white" href="/program-overview/peaks-services/">Learn More</a>
-					</div>
-				</div>
-				<hr>
-				<div class="row around-xs">
-					<div class="col-xs-7">
-						<a href="/terms/">Terms of Use</a> | <a href="/contact/">Careers</a> | <a href="/contact/">Contact</a>
-					</div>
-					<div class="col-xs-3 end-xs">
-						<a href="http://webcabdesign.com/" target="_blank">
-							<img src="http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,e_mask,w_100/v1449867909/footer-badge-webcab-white_xlypcx.png" alt="Web Cab Design">
+					<div class="col-xs-3 col-sm-2 start-xs">
+						<a href="http://peaksrecoveryservices.com/">
+							<img src="https://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,fl_any_format.lossy,h_80/v1470104630/peaks/Peaks-Recovery-Services-Logo.png" alt="Peaks Recovery Services">
 						</a>
 					</div>
 				</div>
+			<div class="row around-xs middle-sm">
+				<div class="col-xs-10 col-sm-7">
+					<p>Everyday millions of individuals and their families are affected by substance use disorder. Studies show that the longer young adults participate in treatment programs and stay active in their recovery, the more likely it is that they will achieve long-term sobriety and stability. We believe it paramount to the long-term success of young adults and their recovery that they continue with extended care treatment. Our client’s personal growth and recovery from alcohol and substance abuse is our highest priority. It’s why we do what we do. At Triple Peaks and Serenity Peaks we value how special your loved one is and we are committed to their long-term recovery and personal growth.</p>
+				</div>
+				<div class="col-xs-10 col-sm-3 center-xs">
+					<a class="button light-neutral" href="/addiction-treatment/substance-use-disorder/">Learn More</a>
+				</div>
 			</div>
-		</footer>
-	<!-- <footer>
-		<div class="upper-foot">
-			<div>
-				<h3>Contact Peaks</h3>
-				<hr>
-				<p><strong>Address</strong></p>
-				<p>5475 Mark Dabling BLVD,<br />Colorado Springs, CO 80918</p>
-				<p><strong>Get in Touch</strong></p>
-				<p><a href="tel:8885069818">(888) 506-9818</a></p>
-				<p><a href="mailto:bburns@peaksrecovery.com">bburns@peaksrecovery.com</a></p>
-			</div>
-			<div>
-				<h3>Peaks Services</h3>
-				<hr>
-				<p>Peaks Recovery Services is a community based IOP program serving the greater Colorado Springs area. Our program specifically works with both young adults (18-35) and working professionals who struggle with substance use disorder and process addictions. We also incorporate an integrative dual diagnosis approach as part of treatment.</p>
-			</div>
-			<div>
-				<h3>Brochure</h3>
-				<hr>
-				<a href="/assets/images/Peaks-Recovery-Services-Brochure.pdf" target="_blank">
-				<img src="http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,fl_any_format.lossy,w_250/v1479075719/peaks/peaks-op/Screen_Shot_2016-11-13_at_3.21.31_PM.png" width="175px" alt="borchure cover" /></a>
+			<hr>
+			<div class="row around-xs">
+				<div class="col-xs-10 col-sm-7">
+					<a href="/terms/">Terms of Use</a> | <a href="/recovery-program/treatment-philosophy/">Recovery Program</a> | <a href="/contact/">Careers</a> | <a href="/contact/">Contact</a>
+				</div>
+				<div class="col-xs-10 col-sm-3 end-xs">
+					<a href="http://webcabdesign.com/" target="_blank">
+						<img src="http://res.cloudinary.com/dbc2wlvk8/image/upload/c_scale,e_mask,w_100/v1449867909/footer-badge-webcab-white_xlypcx.png" alt="Web Cab Design">
+					</a>
+				</div>
 			</div>
 		</div>
-		<div class="copyright">
-			<p>&#169; Copyright Rincon Recovery Center | <a href="http://webcabdesign.com/">Made by WebCab Design</a></p>
-		</div>
-	</footer> -->
+	</footer>
 </body>
 </html>

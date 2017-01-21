@@ -11,17 +11,36 @@
 		background-image: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:486da9,c_fill,e_tint,fl_any_format.lossy,g_center,h_800,o_56,w_1900/v1476392895/peaks/peaks-op/AdobeStock_58707837.jpg');
 	}
 </style>
-<div class="main-image">
-	<!-- <a class="call-now" href="tel:5555555555">
-		<div>Call Now</div>
-		<div>(555) 555 5555</div>
-	</a> -->
-	<div class="main-titles">
-		<h1>Peaks Recovery Services</h1>
-		<h3>Caring for the Colorado Springs Community</h3>
-		<a class="button outline-white" href="tel:8885069818">Call Now</a>
+<div class="slider" data-index="0" data-interval="10000">
+	<div class="main-title">
+		<img src="http://res.cloudinary.com/dbc2wlvk8/image/upload/fl_any_format.lossy,h_800,w_2000/v1481486653/peaks/peaks-centers/Winter-Peaks-Recovery-Centers-Home-Page.jpg" alt="Colorado Mountain Range" />
+		<div class="title-wrap">
+			<div>
+				<div class="transparent-primary">
+					<h1>A Caring Recovery Network</h1>
+					<h2>Peaks Recovery Centers are nationally accredited, gender specific, addiction treatment programs in Colorado, specifically designed for young adults 18-30.</h2>
+				</div>
+			</div>
+			<div>
+				<iframe width="100%" height="100%" min-height="200px" src="https://www.youtube.com/embed/chb4VH14t1Q?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
 	</div>
-	<img src="http://res.cloudinary.com/dbc2wlvk8/image/upload/c_fill,fl_any_format.lossy,h_600,w_1900/v1478236701/peaks/peaks-op/shutterstock_170148734_rdtlch.jpg" alt="Colorado mountain range" />
+	<div class="main-title">
+		<div class="title-wrap">
+			<div class="transparent-secondary">
+				<h1>Gender Specific</h1>
+				<h2>Peaks Recovery Centers are among a very short list of extended care, gender specific treatment facilities within the state of Colorado. In fact, we are the only gender-separate treatment facility in the state of Colorado offering a full six-months of clinical services.</h2>
+			</div>
+			<div>
+				<iframe width="100%" height="100%" min-height="200px" src="https://www.youtube.com/embed/EoI2PDvCeTI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		<img src="http://res.cloudinary.com/dbc2wlvk8/image/upload/fl_any_format.lossy,h_800,w_2000/v1481486653/peaks/peaks-centers/Winter-Peaks-Recovery-Centers-Home-Page.jpg" alt="Colorado Mountain Range" />
+	</div>
+</div>
+<div class="verify">
+	<a href="/recovery-program/admissions/verify-insurance/">Verify Insurance</a>
 </div>
 <section class="boxes row around-xs content">
 	<div class="col-xs-12 col-sm">
@@ -42,44 +61,61 @@
 </section>
 
 <section class="paralax paralax-0">
-	<div class="content">
-		<h2>Contact Us</h2>
-		<p class="center content">
-			If you would like to learn more about our program, please click Contact Now and a representative from Peaks will contact you within 24 hours.
-		</p>
-		<a class="button outline-white" href="/contact">Contact Now</a>
-		<!-- <h2>Our Colorado Location</h2> -->
-		<!-- <p>Offering gender-specific, evidence based, long-term treatment for drug and alcohol addiction</p>
-		<a class="button outline-white" href="tel:8885069818">Call Now</a> -->
-	</div>
-</section>
-
-<section>
-	<!-- { "partial": "assets/partials/insurance-verify.p.html" } -->
-</section>
-
-<!-- <section class="grey-bg">
 	<h2>Contact Us</h2>
-	<p class="center content">
-		If you would like to learn more about our program, please fill out the form and a representative from Peaks will contact you within 24 hours.
+	<p>
+		If you would like to learn more about our program, please click Contact Now and a representative from Peaks will contact you within 24 hours.
+		<a class="button primary" href="/contact">Contact Now</a>
 	</p>
-
-	<div class="contact-response"></div>
-
-	<form class="contact-form" method="POST" enctype="application/json" action="https://formspree.io/xdoqekem">
-		<div class="row center-xs">
-			<input class="col-xs-4" type="text" name="First_Name" placeholder="First Name" required/>
-			<input class="col-xs-4" type="text" name="Last_Name" placeholder="Last Name" required/>
+</section>
+<section class="contact-section">
+	<h3>Contact Peaks Recovery and get confidential help!</h3>
+	<hr>
+	<form class="form">
+		<input type="hidden" name="*cc" value="cburns@peaksrecovery.com" />
+		<div class="row">
+			<div class="col-xs-12 col-sm-6">
+				<input type="text" name="First Name" placeholder="First Name">
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<input type="text" name="Last Name" placeholder="Last Name">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-6">
+				<input type="number" name="Phone" placeholder="Phone">
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<input type="text" name="Email" placeholder="Email">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-6">
+				<input type="text" name="Insurance" placeholder="Insurance">
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<input type="text" name="Seeking Care For" placeholder="Seeking care for?">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<textarea type="text" name="Message" placeholder="What can we help you with?"></textarea>
+			</div>
 		</div>
 		<div class="row center-xs">
-			<input class="col-xs-4" type="tel" name="Phone_Number" placeholder="Phone Number"/>
-			<input class="col-xs-4" type="email" name="Email_Address" placeholder="Email Address" required/>
+			<div class="col-xs-12">
+				<input type="hidden" name="Form Name" value="Peaks Recovery - Contact">
+				<input type="hidden" name="*formname" value="Peaks Recovery - Contact">
+				<input class="button primary" type="submit" value="Get Help">
+			</div>
+			<div class="col-xs-12">
+				<img src="http://res.cloudinary.com/dbc2wlvk8/image/upload/fl_any_format.lossy/v1480971111/peaks/JCNQA_1.png" alt="">
+				<img src="http://res.cloudinary.com/dbc2wlvk8/image/upload/fl_any_format.lossy/v1480971111/peaks/NAATP-Peaks.png" alt="">
+			</div>
 		</div>
-		<div class="row center-xs">
-			<textarea class="col-xs-10" name="Message" placeholder="Message"></textarea>
+		<div class="row">
+			<strong>By submitting this form, I agree to be contacted by Peak Recovery Centers.</strong>
+			<p>One of our admissions coordinators will contact you shortly to discuss your recovery options. All information shared with us is completely confidential.</p>
 		</div>
-		<input type="hidden" name="_cc" value="bburns@peaksrecovery.com" />
-		<input type="hidden" name="_format" value="plain" />
-		<input class="button outline-white" type="submit" value="Submit">
-    </form>
-</section> -->
+	</form>
+	<div class="response"></div>
+</section>
