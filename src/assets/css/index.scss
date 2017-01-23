@@ -205,9 +205,7 @@ header img {
 		font-size: 1rem;
 	}
 }
-.title-wrap > div:nth-child(2) {
-	height: 100%;
-}
+
 .main-title img {
 	top: 0;
 	left: 0;
@@ -353,6 +351,18 @@ header img {
 	color: $light-neutral;
 	&:hover {
 		background: lighten($primary, 10%);
+	}
+}
+.learn-more {
+	border: 1px solid white;
+	padding: 1rem;
+	cursor: pointer;
+	color: white;
+	font-weight: bold;
+	&:hover {
+		border: none;
+		background: white;
+		color: $primary;
 	}
 }
 .read {
@@ -704,9 +714,10 @@ footer .copyright a:hover {
 }
 @media screen and (max-width: 940px) {
 	.title-wrap div {
-		width: 80%;
+		width: 90%;
+		padding: inherit;
 	}
-	.title-wrap div:nth-child(1) {
+	.title-wrap div:nth-child(2) {
 		display: none;
 	}
 	.logo {
