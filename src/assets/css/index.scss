@@ -34,9 +34,6 @@ section {
 	padding: 6%;
 	box-sizing: border-box;
 }
-section h3 {
-
-}
 p {
 	margin: 8px 0;
 }
@@ -354,15 +351,17 @@ header img {
 	}
 }
 .learn-more {
-	border: 1px solid white;
 	padding: 1rem;
 	cursor: pointer;
-	color: white;
+	color: $primary;
+	background: white;
 	font-weight: bold;
+	z-index: 1;
 	&:hover {
 		border: none;
-		background: white;
+		background: none;
 		color: $primary;
+		border: 1px solid white;
 	}
 }
 .read {
@@ -657,9 +656,9 @@ footer > div {
 		color: #fff;
 	}
 }
-footer > div {
-	padding: 16px 0;
-}
+// footer > div {
+// 	padding: 16px 0;
+// }
 footer .links {
 	color: $neutral;
 	font-weight: 300;
