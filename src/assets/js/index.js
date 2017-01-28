@@ -26,15 +26,51 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	}
 
-	// var bioButton = document.querySelector('.bio');
-	// var bioContent = document.querySelector('.bio-more');
-	// var closeButton = document.querySelector('.close');
-	//
-	// bioButton.addEventListener('click', function(){
-	// 	bioContent.classList.toggle('active');
-	// });
-	// closeButton.addEventListener('click', function(){
-	// 	closeButton.classList.toggle('active')
-	// });
+	var bioToggles = document.querySelectorAll('.bio-toggle');
+	var fullBios = document.querySelectorAll('.full-bio');
+
+	for (var i = 0; i < bioToggles.length; i++) {
+		var bioToggle = bioToggles[i];
+		var fullBio = fullBios[i];
+		var closeButton = document.createElement('div');
+
+		closeButton.classList.add('close-button');
+		closeButton.innerText = 'CLOSE BIO';
+		fullBio.firstElementChild.appendChild(closeButton);
+
+		bioToggle.addEventListener('click', function (){
+			var currentBio = this.parentNode.querySelector('.full-bio');
+			currentBio.classList.toggle('active');
+			document.body.style = 'overflow-y: hidden';
+		});
+		closeButton.addEventListener('click', function (){
+			this.parentNode.parentNode.classList.toggle('active');
+			document.body.style = 'overflow-y: inherit';
+		});
+	}
+
+	var tprcOfficeGallery = document.querySelector('.peaks-services-gallery');
+	if (tprcOfficeGallery) {
+		Astatine.ajax({
+			method: 'get',
+			action: 'https://res.cloudinary.com/dbc2wlvk8/image/list/peaks-services-gallery.json',
+			success: function (xhr) {
+				var list = JSON.parse(xhr.response);
+				var largeImages = [];
+				var smallImages = [];
+
+				for (var i = 0, l = list.resources.length; i < l; i++) {
+					var item = list.resources[i];
+					largeImages.push('https://res.cloudinary.com/dbc2wlvk8/image/upload/f_auto,fl_any_format.lossy,w_900/' + item.public_id + '.' + item.format);
+					smallImages.push('https://res.cloudinary.com/dbc2wlvk8/image/upload/f_auto,fl_any_format.lossy,w_150/' + item.public_id + '.' + item.format);
+				}
+
+				erbium.gallery.create('.peaks-services-gallery', largeImages, smallImages);
+			},
+			error: function (xhr) {
+				console.log(xhr);
+			}
+		});
+	}
 
 });
