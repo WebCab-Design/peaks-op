@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "build": "rm -r dist/* && muleify pack -o dist && rm -r docs/* && muleify pack -o docs"
+    "build": "rm -r docs/* && muleify pack src docs"
   },
   "repository": {
     "type": "git",
