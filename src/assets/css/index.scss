@@ -443,6 +443,11 @@ header img {
     text-align: left;
 }
 .contact-section {
+	h2 {
+		text-align: center;
+		color: $primary;
+	}
+
 	background: rgba($primary, 0.4);
 	span {
 		color: $primary;

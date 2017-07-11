@@ -514,6 +514,11 @@ header img {
     background: rgba(107, 158, 120, 0.4);
 }
 
+.contact-section h2 {
+    text-align: center;
+    color: #6b9e78;
+}
+
 .contact-section span {
     color: #6b9e78;
     font-weight: 100;
