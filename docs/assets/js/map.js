@@ -1,4 +1,6 @@
 
+var theme = '#6b9e78';
+
 function initMap () {
 	var map = new google.maps.Map(document.getElementById('map'), {
 		zoom: 12,
@@ -6,80 +8,80 @@ function initMap () {
 		center: { lat: 38.9124686, lng: -104.8197367 },
 		styles: [
 			{
-				"featureType": "administrative",
-				"elementType": "labels.text.fill",
-				"stylers": [
+				'featureType': 'administrative',
+				'elementType': 'labels.text.fill',
+				'stylers': [
 					{
-						"color": "#444444"
+						'color': '#444444'
 					}
 				]
 			},
 			{
-				"featureType": "landscape",
-				"elementType": "all",
-				"stylers": [
+				'featureType': 'landscape',
+				'elementType': 'all',
+				'stylers': [
 					{
-						"color": "#f2f2f2"
+						'color': '#f2f2f2'
 					}
 				]
 			},
 			{
-				"featureType": "poi",
-				"elementType": "all",
-				"stylers": [
+				'featureType': 'poi',
+				'elementType': 'all',
+				'stylers': [
 					{
-						"visibility": "off"
+						'visibility': 'off'
 					}
 				]
 			},
 			{
-				"featureType": "road",
-				"elementType": "all",
-				"stylers": [
+				'featureType': 'road',
+				'elementType': 'all',
+				'stylers': [
 					{
-						"saturation": -100
+						'saturation': -100
 					},
 					{
-						"lightness": 45
+						'lightness': 45
 					}
 				]
 			},
 			{
-				"featureType": "road.highway",
-				"elementType": "geometry",
-				"stylers": [
+				'featureType': 'road.highway',
+				'elementType': 'geometry',
+				'stylers': [
 					{
-						"color": "#6db4b1",
+						'color': theme,
 					}
 				]
 			},
 			{
-				"featureType": "road.arterial",
-				"elementType": "labels.icon",
-				"stylers": [
+				'featureType': 'road.arterial',
+				'elementType': 'labels.icon',
+				'stylers': [
 					{
-						"visibility": "off"
+						'visibility': 'off'
 					}
 				]
 			},
 			{
-				"featureType": "transit",
-				"elementType": "all",
-				"stylers": [
+				'featureType': 'transit',
+				'elementType': 'all',
+				'stylers': [
 					{
-						"visibility": "off"
+						'visibility': 'off'
 					}
 				]
 			},
 			{
-				"featureType": "water",
-				"elementType": "all",
-				"stylers": [
+				'featureType': 'water',
+				'elementType': 'all',
+				'stylers': [
 					{
-						"color": "#6db4b1"
+						'color': theme
 					},
 					{
-						"visibility": "on"
+						'visibility': 'on'
 					}
 				]
 			}
