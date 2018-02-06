@@ -1,5 +1,6 @@
 {
-	"name": "peaksrecoveryservices",
+	"private": true,
+	"name": "peaksrecoveryservices.com",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
